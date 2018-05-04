@@ -1,0 +1,13 @@
+/ccsObjs.opt
+/main.d
+/main.obj
+/makefile
+/msp430g2553_aquariumControl.map
+/msp430g2553_aquariumControl.out
+/msp430g2553_aquariumControl_linkInfo.xml
+/objects.mk
+/sources.mk
+/subdir_rules.mk
+/subdir_vars.mk
+/usci_i2c.d
+/usci_i2c.obj
