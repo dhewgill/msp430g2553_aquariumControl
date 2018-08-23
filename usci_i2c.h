@@ -62,6 +62,12 @@ typedef enum
 	I2C_S_STOP					= 16
 } enum_i2c_state_t;
 
+typedef enum
+{
+    I2C_S_TX_IDLE               = 0,
+    I2C_S_TX_ADDR               = 2,
+    I2C_S_TX_BYTE               = 4
+} enum_i2c_tx_state_t;
 
 typedef struct _i2c_transaction_t i2c_transaction_t;
 
