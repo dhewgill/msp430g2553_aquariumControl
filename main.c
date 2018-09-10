@@ -25,6 +25,31 @@ int _system_pre_init(void)
 }
 int main(void)
 {
-	
+	// Inits.
+
+    for (;;)
+    {
+        // Why were we woken up?
+
+        // If woken up because of continuation of I2C event:
+            // Continue I2C event [follow callback, etc...].
+
+        // If woken up for some system event:
+            // Set the system flag(s).
+
+        // If the I2C peripheral [USCI] is not busy:
+            // Service any system flags that require USCI [in priority sequence].
+
+        // Service any system flags that don't require shared resources.
+
+        // Go to sleep if we can.
+    }
+
 	return 0;
 }
+
+
+/*
+ * State machine for UI updates.
+ *
+ */
