@@ -1,6 +1,18 @@
 #include <msp430.h> 
 
-// ##########################
+// ############################
+// Defines and type definitions
+
+typedef struct menu_item_2line
+{
+    const uint8_t*          line_1_static;
+    const uint8_t*          line_2_static;
+    const uint8_t           l1_cursor_pos;
+    const uint8_t           l2_cursor_pos;
+    struct menu_item_2line* next_menu;
+} menu_item_2line_t;
+
+// ############################
 // Function Definitions
 
 
